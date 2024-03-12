@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: #eeeeee;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+h2 {
+    padding: 0 0 16px 0;
+    border-bottom: 2px solid #3868d6;
+    font-style: italic;
+    color: #3868d6;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header, footer {
+    background-color: #3868d6;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    padding: 8px 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 32px;
+}
+
+section {
+    padding: 32px 0;
+}
+
+section h2 {
+    margin-bottom: 48px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.produtos li {
+    list-style: none;
+}
+
+.produtos li img {
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.produtos li h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #3868d6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .produtos {
+        grid-template-columns: repeat(2, 47%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+    .container {
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #sobre-a-loja .container-flex {
+        display: block;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .produtos {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #sobre-a-loja .container-flex {
+        display: block;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+}
